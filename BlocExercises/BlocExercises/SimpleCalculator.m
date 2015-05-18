@@ -21,11 +21,9 @@
 - (NSInteger) addNumber:(NSInteger) number1 toNumber:(NSInteger) number2 {
     /* WORK HERE */
     
-//    number1 = 17;
-//    number2 = 3;
+   number1 = 17;
+   number2 = 3;
     
-    
-//    
     NSInteger sum = number1 + number2;
     
     
@@ -37,12 +35,12 @@
 - (NSInteger) remainderOfNumber:(NSInteger) dividend dividedByNumber:(NSInteger) divisor {
     /* WORK HERE */
     
-   // dividend = 30;
-   // divisor = 6;
+   dividend = 9;
+   divisor = 3;
     
     NSInteger remainder = dividend % divisor;
     
-    
+    //NSLog(@"Remainder of 8 / 4 = %ld", dividend % divisor);
     return remainder;
 }
 

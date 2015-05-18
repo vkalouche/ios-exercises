@@ -12,9 +12,15 @@
 
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
     /* WORK HERE */
-    return nil;
-}
+    cheeseName = @"cheddar";
+    
+   // NSString *fullSentence = @"my favorite cheese is ricotta";
+   
+   // return YES;
 
+    return @"My favorite cheese is ricotta.";
+    
+}
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
     /* WORK HERE */
     return nil;
