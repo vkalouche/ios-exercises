@@ -23,6 +23,7 @@
 
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
+<<<<<<< HEAD
     
     /* WORK HERE */
 
@@ -33,6 +34,19 @@
     NSString *cheeseNameOnly = [fullCheeseString stringByReplacingCharactersInRange:cheeseRange withString:@"Monterey Jack"];
     
     return cheeseNameOnly;
+=======
+    if ([[cheeseName lowercaseString] hasSuffix:@" cheese"]) {
+        /* WORK HERE, ASSUMING `cheeseName` ENDS WITH " cheese" */
+    } else {
+        /* WORK HERE, ASSUMING `cheeseName` DOES NOT END WITH " cheese" */
+    }
+
+    /*
+     (You will learn more about if/else statements in the next checkpoint.)
+     */
+
+    return nil;
+>>>>>>> upstream/master
 }
 
 
