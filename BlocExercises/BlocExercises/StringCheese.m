@@ -23,7 +23,6 @@
 
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
-<<<<<<< HEAD
     
     /* WORK HERE */
 
@@ -34,50 +33,69 @@
     NSString *cheeseNameOnly = [fullCheeseString stringByReplacingCharactersInRange:cheeseRange withString:@"Monterey Jack"];
     
     return cheeseNameOnly;
-=======
-    if ([[cheeseName lowercaseString] hasSuffix:@" cheese"]) {
-        /* WORK HERE, ASSUMING `cheeseName` ENDS WITH " cheese" */
-    } else {
-        /* WORK HERE, ASSUMING `cheeseName` DOES NOT END WITH " cheese" */
-    }
-
-    /*
-     (You will learn more about if/else statements in the next checkpoint.)
-     */
-
-    return nil;
->>>>>>> upstream/master
+    
 }
+
 
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
     
+    
+    
     if (cheeseCount == 1) {
+        
+        
         
         /* WORK HERE, ASSUMING THERE IS 1 CHEESE */
         
-       NSString *phrase = @"1 cheese";
+        
+        
+        NSString *phrase = @"1 cheese";
+        
+        
+        
         
         
         return phrase;
-
+        
+        
+        
+        
         
     } else {
+        
+        
         
         NSString *phrase = @"7 cheeses";
         
         
+        
+        
+        
         return phrase;
-
+        
+        
+        
     }
     
     /*
+     
      (You will learn more about if/else statements in the next checkpoint.)
+     
      */
+    
+    
     
     NSString *dontknowthecount = @"don't know the cheese count.";
     
+    
+    
     return dontknowthecount;
+    
 }
 
+
+
+
 @end
+
