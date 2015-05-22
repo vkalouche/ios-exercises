@@ -13,9 +13,11 @@
 - (NSString *) favoriteCheeseStringWithCheese:(NSString *)cheeseName {
     /* WORK HERE */
     
-    cheeseName = @"ricotta.";
+  //  cheeseName = @"ricotta.";
    
     NSString *favoriteCheese = [NSString stringWithFormat:@"My favorite cheese is %@", cheeseName];
+    
+    
     
     return favoriteCheese;
 }

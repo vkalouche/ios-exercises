@@ -36,7 +36,7 @@
     
     XCTAssertEqualObjects(favoriteCheese, @"My favorite cheese is ricotta.", @"Incorrect favorite cheese string returned.");
 
-   // NSString *goatString = @"goat";
+    //NSString *goatString = @"goat";
    // favoriteCheese = [self.stringCheese favoriteCheeseStringWithCheese:goatString];
    // XCTAssertEqualObjects(favoriteCheese, @"My favorite cheese is goat.", @"Incorrect favorite cheese string returned.");
 }

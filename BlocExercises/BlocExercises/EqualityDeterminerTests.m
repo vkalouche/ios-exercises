@@ -45,14 +45,14 @@
 }
 
 - (void) testThatTwoNumbersAreEqual {
-    NSNumber *sixNumber = [NSNumber numberWithFloat:6];
-    NSNumber *identicalSixNumber = [NSNumber numberWithInt:6];
+    NSNumber *sixNumber = [NSNumber numberWithFloat:6.0];
+    NSNumber *identicalSixNumber = [NSNumber numberWithFloat:6.0];
     BOOL numberEquality = [self.determiner number:sixNumber isTheSameAsNumber:identicalSixNumber];
     XCTAssertTrue(numberEquality, @"Six should be equal to six.");
 }
 
 - (void) testThatTwoNumbersAreInequal {
-    NSNumber *sixNumber = [NSNumber numberWithFloat:6];
+    NSNumber *sixNumber = [NSNumber numberWithFloat:6.0];
     NSNumber *sevenNumber = [NSNumber numberWithInt:7];
     BOOL numberEquality = [self.determiner number:sixNumber isTheSameAsNumber:sevenNumber];
     XCTAssertFalse(numberEquality, @"Six should not be equal to seven.");
