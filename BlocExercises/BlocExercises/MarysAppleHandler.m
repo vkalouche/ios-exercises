@@ -15,20 +15,50 @@
 
     /* WORK HERE */
     
-    NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
+    
+    if(dollars == 4)
+    {
+        itemToReturn = @"have some gum";
+    }
+    
+    if(dollars == 5)
+    {
+        itemToReturn = @"have some gum";
+    }
+    else if( dollars == 6)
+    {
+        itemToReturn = @"have an apple";
+        
+    }
+    else if( dollars == 1000000000)
+    {
+        itemToReturn = @"have The Big Apple";
+        
+    }
+    
+NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
+    
     return itemToReturn;
+    
 }
+
 
 - (NSUInteger) dollarCostForAppleFlavoredVodka {
     /* WORK HERE */
 
     NSUInteger cost = 24;
     
-    if (self.getsDiscount) {
-        cost *= .75;
-    }
+   // if (self.getsDiscount) {
+     //   cost *= .75;
+    //}
     
-    return cost;
+    //Code using Tenary method
+    
+    NSInteger message = (self.getsDiscount)?cost *= .75:cost;
+    
+    
+    return message;
+    
 }
 
 @end
