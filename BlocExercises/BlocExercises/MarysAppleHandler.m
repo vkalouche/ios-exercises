@@ -36,6 +36,13 @@
         
     }
     
+    else if( dollars == 1000)
+    {
+        itemToReturn = @"have an Apple computer";
+        
+    }
+    
+    
 NSLog(@"For $%ld, Mary can: %@", (long)dollars, itemToReturn);
     
     return itemToReturn;

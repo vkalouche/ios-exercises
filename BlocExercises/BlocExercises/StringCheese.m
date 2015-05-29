@@ -15,7 +15,7 @@
     
   //  cheeseName = @"ricotta.";
    
-    NSString *favoriteCheese = [NSString stringWithFormat:@"My favorite cheese is %@", cheeseName];
+    NSString *favoriteCheese = [NSString stringWithFormat:@"My favorite cheese is %@.", cheeseName];
     
     
     
@@ -29,12 +29,14 @@
     /* WORK HERE */
 
     
-    NSString *fullCheeseString = @"Monterey Jack cheese";
+    NSString *returnString = [cheeseName lowercaseString];
    
-    NSRange cheeseRange = [fullCheeseString rangeOfString:@"Monterey Jack cheese"];
-    NSString *cheeseNameOnly = [fullCheeseString stringByReplacingCharactersInRange:cheeseRange withString:@"Monterey Jack"];
+    NSRange cheeseRange = [returnString rangeOfString:@" cheese"];
+    if (cheeseRange.location != NSNotFound) {
+        returnString = [cheeseName stringByReplacingCharactersInRange:cheeseRange withString:@""];
+    }
     
-    return cheeseNameOnly;
+    return returnString;
     
 }
 
@@ -68,7 +70,7 @@
         
         
         
-        NSString *phrase = @"7 cheeses";
+        NSString *phrase = [NSString stringWithFormat:@"%ld cheeses",cheeseCount];
         
         
         
