@@ -12,27 +12,37 @@
 
 - (NSString *) stringWithNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
-      //  while (otherNumber > number) {
-       
-      //NSString *expectedString = [NSString stringWithFormat: @"%ld %ld", (long)number,(long)number+1,(long)otherNumber];
-    
-        //NSLog(expectedString);
-    
-    
-    NSInteger i = number;
-    
-    for(i=number;i<=otherNumber;i++){
-        // NSLog(@"%d\n",i);
-       // NSLog(@"%ld",i);
-        
-        NSString *expectedString = [NSString stringWithFormat: @"%ld", (long)i];
-        
-     //   NSLog(@"%@",expectedString);
-
-        
-    }
-    return @"%@";
   
+    
+    NSMutableString *fullString = [NSMutableString string];
+    
+    
+    NSInteger i;
+    
+    if(number < otherNumber)
+    {
+        
+        for (i = number; i <= otherNumber; i++)
+        {
+            [fullString appendString:[NSMutableString stringWithFormat:@"%ld", i]];
+        }
+        
+    }else
+    
+        {
+           
+            
+            for (i = otherNumber; i <= number; i++)
+            {
+                [fullString appendString:[NSMutableString stringWithFormat:@"%ld", i]];
+            }
+            
+            
+        }
+    
+    
+    return fullString;
+    
 }
 
 @end

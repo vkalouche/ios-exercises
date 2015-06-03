@@ -13,9 +13,13 @@
 - (BOOL) string:(NSString *)string1 isTheSameAsString:(NSString *)string2 {
     /* WORK HERE */
     
-    string2=string1;
+    //string2=string1;
     
-    return (string1 == string2);
+    BOOL areStringsEqual = [string1 isEqualToString:string2];
+    
+    //return (string1 == string2);
+    return areStringsEqual;
+    
 }
 
 
@@ -24,11 +28,9 @@
     
      BOOL areTheyEqual = [number1 isEqualToNumber:number2];
         
-   return areTheyEqual;
-
+    return areTheyEqual;
    
 }
-
 
 
 - (BOOL) integer:(NSInteger)integer1 isGreaterThan:(NSInteger)integer2 {

@@ -45,6 +45,7 @@
 }
 
 - (void) testThatTwoNumbersAreEqual {
+
     NSNumber *sixNumber = [NSNumber numberWithFloat:6.0];
     NSNumber *identicalSixNumber = [NSNumber numberWithFloat:6.0];
     BOOL numberEquality = [self.determiner number:sixNumber isTheSameAsNumber:identicalSixNumber];

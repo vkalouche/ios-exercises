@@ -18,10 +18,8 @@
     NSString *favoriteCheese = [NSString stringWithFormat:@"My favorite cheese is %@.", cheeseName];
     
     
-    
     return favoriteCheese;
 }
-
 
 
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
@@ -39,7 +37,6 @@
     return returnString;
     
 }
-
 
 
 - (NSString *) numberOfCheesesStringWithCheeseCount:(NSUInteger)cheeseCount {
