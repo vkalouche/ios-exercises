@@ -31,6 +31,7 @@
 }
 
 - (void)testThatStringWorksAscending {
+
     NSInteger lowNumber = -7;
     NSInteger highNumber = 13;
     NSString *expectedString = @"-7-6-5-4-3-2-1012345678910111213";
