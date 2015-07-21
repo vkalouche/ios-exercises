@@ -11,22 +11,20 @@ func favoriteCheeseStringWithCheese(cheese: String) -> String {
     return cheese
 }
 
-let fullSentence = favoriteCheeseStringWithCheese("cheddar")
-// Make fullSentence say "My favorite cheese is cheddar."
-
+let fullSentence = favoriteCheeseStringWithCheese("My Favorite cheese is cheddar.")
 /*
 
 Arrays & Dictionaries
 
 */
 
-let numberArray = [1, 2, 3, 4]
+var numberArray = [1, 2, 3, 4]
 // Add 5 to this array
-// WORK HERE
+numberArray.append(5)
 
-let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
 // Add 5 : "five" to this dictionary
-// WORK HERE
+var numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four", 5: "five"]
+
 
 /*
 
@@ -35,10 +33,12 @@ Loops
 */
 
 // Use a closed range loop to print 1 - 10, inclusively
-// WORK HERE
+ 1...10
+
 
 // Use a half-closed range loop to print 1 - 10, inclusively
-// WORK HERE
+ 1..<10
+
 
 let worf = [
     "name": "Worf",
@@ -57,8 +57,10 @@ let characters = [worf, picard]
 
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
-    // WORK HERE
-    return []
+   
+    var favoriteDrinks = ["prune juice", "tea, Earl Grey, hot"]
+    
+    return favoriteDrinks
 }
 
 let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
@@ -71,13 +73,38 @@ Functions
 
 */
 
+    //let strings = ["milk", "eggs", "bread", "challah"]
+    
+    //let expectedOutput = ";".join(strings)
+
+    //return expectedOutput
+//}
+    
 // Make a function that inputs an array of strings and outputs the strings separated by a semicolon
 
-let strings = ["milk", "eggs", "bread", "challah"]
 
-// WORK HERE - make your function and pass `strings` in
+// STEVE -  - make your function and pass `strings` in
 
-let expectedOutput = "milk;eggs;bread;challah"
+func createListfromArray(strings: Array<String>) -> String
+
+{
+    let strings = ["milk", "eggs", "bread", "challah"]
+    
+    //Through Join - not working
+    
+  //  var expectedOutput = ";".join(strings)
+
+    //Through looping - Also not working
+    
+var expectedOutput = ""
+    
+for value in strings[1..<strings.count] {
+
+   expectedOutput = value + ";"}
+    return (expectedOutput)
+}
+
+//let expectedOutput = "milk;eggs;bread;challah"
 
 /*
 
@@ -88,4 +115,5 @@ Closures
 let cerealArray = ["Golden Grahams", "Cheerios", "Trix", "Cap'n Crunch OOPS! All Berries", "Cookie Crisp"]
 
 // Use a closure to sort this array alphabetically
-// WORK HERE
+
+let SortedceralArray = sorted(cerealArray)

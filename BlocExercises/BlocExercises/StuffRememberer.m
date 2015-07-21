@@ -12,7 +12,9 @@
 
 - (void) rememberThisArrayForLater:(NSMutableArray *)arrayToRemember {
     /* WORK HERE */
-        
+    
+    NSArray *newArray = @[@"one", @"two", @"three", @"four"];
+    arrayToRemember = newArray;
 }
 
 - (void) copyThisArrayForLater:(NSMutableArray *)arrayToCopy {
