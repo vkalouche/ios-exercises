@@ -68,7 +68,6 @@ let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
 favoriteDrinks
 
 
-
 //Functions
 
 // Make a function that inputs an array of strings and outputs the strings separated by a semicolon
