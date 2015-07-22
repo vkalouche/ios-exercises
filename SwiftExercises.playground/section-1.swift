@@ -67,44 +67,25 @@ let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
 
 favoriteDrinks
 
-/*
 
-Functions
 
-*/
+//Functions
 
-    //let strings = ["milk", "eggs", "bread", "challah"]
-    
-    //let expectedOutput = ";".join(strings)
-
-    //return expectedOutput
-//}
-    
 // Make a function that inputs an array of strings and outputs the strings separated by a semicolon
 
 
-// STEVE -  - make your function and pass `strings` in
-
-func createListfromArray(strings: Array<String>) -> String
-
+func printStringsJoinedWithSemicolonAfterEach(strings:Array<String>, outputString: String)-> String
 {
+    
     let strings = ["milk", "eggs", "bread", "challah"]
+    let outputString = ";".join(strings)
+    return outputString
     
-    //Through Join - not working
-    
-  //  var expectedOutput = ";".join(strings)
 
-    //Through looping - Also not working
-    
-var expectedOutput = ""
-    
-for value in strings[1..<strings.count] {
-
-   expectedOutput = value + ";"}
-    return (expectedOutput)
 }
 
-//let expectedOutput = "milk;eggs;bread;challah"
+printStringsJoinedWithSemicolonAfterEach([""], "")
+
 
 /*
 
